@@ -15,7 +15,7 @@ spec:
       serviceAccountName: cloudmart-pod-execution-role
       containers:
       - name: cloudmart-frontend-app
-        image: public.ecr.aws/l3t1q2x1/cloudmaster-frontend
+        image: public.ecr.aws/l3t1q2x1/cloudmaster-frontend:latest
 ---
 
 apiVersion: v1
@@ -30,4 +30,3 @@ spec:
     - protocol: TCP
       port: 5001
       targetPort: 5001
-
